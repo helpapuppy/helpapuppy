@@ -15,26 +15,88 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6HX7SJQRZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6HX7SJQRZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-X6HX7SJQRZ');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X6HX7SJQRZ');
+  </script>
 </head>
 
 <body>
+  <main>
+    <div class="container">
+      <div class="heading">
+        <h1>Help us help them 🐶</h1>
+        <p class="description">We have 200€ to donate but we can’t decide on which shelter...</p>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="votes">
+            <div class="vote-count">123</div>
+            <div class="vote-label">votes</div>
+          </div>
+          <div class="card-img"><img src="" alt=""></div>
+          <div class="card-content">
+            <span class="card-title">Name of the shelter</span>
+            <a href="/">Visit their website →</a>
+            <a id="button1" class="button" href="javascript:void(0)">Vote Shelter</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="votes">
+            <div class="vote-count">123</div>
+            <div class="vote-label">votes</div>
+          </div>
+          <div class="card-img"><img src="" alt=""></div>
+          <div class="card-content">
+            <span class="card-title">Name of the shelter</span>
+            <a href="/">Visit their website →</a>
+            <a id="button1" class="button" href="javascript:void(0)">Vote Shelter</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="votes">
+            <div class="vote-count">123</div>
+            <div class="vote-label">votes</div>
+          </div>
+          <div class="card-img"><img src="" alt=""></div>
+          <div class="card-content">
+            <span class="card-title">Name of the shelter</span>
+            <a href="/">Visit their website →</a>
+            <a id="button2" class="button" href="javascript:void(0)">Vote Shelter</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="votes">
+            <div class="vote-count">123</div>
+            <div class="vote-label">votes</div>
+          </div>
+          <div class="card-img"><img src="" alt=""></div>
+          <div class="card-content">
+            <span class="card-title">Name of the shelter</span>
+            <a href="/">Visit their website →</a>
+            <a id="button3" class="button" href="javascript:void(0)">Vote Shelter</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-us">
+        <h2>About us</h2>
+        <p>Curabitur blandit tempus ardua ridiculus sed magna. Fictum, deserunt mollit anim laborum astutumque! Phasellus laoreet lorem vel dolor tempus vehicula. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+        <p>Thank you ❤️</p>
+      </div>
 
-  <a id="button1" class="button" href="javascript:void(0)">Click me</a>
-  </br>
-  <a id="button2" class="button" href="javascript:void(0)">Click me</a>
-  </br>
-  <a id="button3" class="button" href="javascript:void(0)">Click me</a>
+    </div>
+  </main>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
