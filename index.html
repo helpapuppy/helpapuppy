@@ -30,11 +30,11 @@
 
 <body>
 
-  <a id="button1" class="button" href="javascript:void(0)">Click me</a>
+  <a id="button1" class="button" href="http://www.example.com" onclick="getOutboundLink('http://www.example.com'); return false;">Check out example.com">Click me1</a>
   </br>
-  <a id="button2" class="button" href="javascript:void(0)">Click me</a>
+  <a id="button2" class="button" href="http://www.google.com" onclick="getOutboundLink('http://www.google.com'); return false;">Check out google.com">Click me2</a>
   </br>
-  <a id="button3" class="button" href="javascript:void(0)">Click me</a>
+  <a id="button3" class="button" href="http://www.twitter.com" onclick="getOutboundLink('http://www.twitter.com'); return false;">Check out twitter.com">Click me3</a>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -58,6 +58,24 @@
 
     gtag('config', 'G-X6HX7SJQRZ');
   </script>
+
+<script>
+/**
+* Function that registers a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var getOutboundLink = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'outbound',
+    'event_label': url,
+    'transport_type': 'beacon',
+    'event_callback': function(){document.location = url;}
+  });
+}
+</script>
+
 </body>
 
 </html>
