@@ -45,7 +45,7 @@
             <div class="vote-count">123</div>
             <div class="vote-label">votes</div>
           </div>
-          <div class="card-img img-1" onclick="getOutboundLink('https://www.instagram.com/adoptanssantcugat/?igshid=zovsih6tcrmy'); return false;"></div>
+          <div class="card-img img-1 button" onclick="getOutboundLink('https://www.instagram.com/adoptanssantcugat/?igshid=zovsih6tcrmy'); return false;"></div>
           <div class="card-content">
             <div class="card-title">Adopta'ns Sant Cugat</div>
             <div class="card-link"><a href="https://www.instagram.com/adoptanssantcugat/?igshid=zovsih6tcrmy" onclick="getOutboundLink('https://www.instagram.com/adoptanssantcugat/?igshid=zovsih6tcrmy'); return false;" target="_blank">Visit their website →</a></div>
@@ -57,7 +57,7 @@
             <div class="vote-count">123</div>
             <div class="vote-label">votes</div>
           </div>
-          <div class="card-img img-2" onclick="getOutboundLink('https://www.facebook.com/thepawportal/'); return false;"></div>
+          <div class="card-img img-2 button" onclick="getOutboundLink('https://www.facebook.com/thepawportal/'); return false;"></div>
           <div class="card-content">
             <div class="card-title">The Paw Portal</div>
             <div class="card-link"><a href="https://www.facebook.com/thepawportal/" onclick="getOutboundLink('https://www.facebook.com/thepawportal/'); return false;" target="_blank">Visit their website →</a></div>
@@ -69,7 +69,7 @@
             <div class="vote-count">123</div>
             <div class="vote-label">votes</div>
           </div>
-          <div class="card-img img-3" onclick="getOutboundLink('http://grupoayudabodegueros.org/'); return false;"></div>
+          <div class="card-img img-3 button" onclick="getOutboundLink('http://grupoayudabodegueros.org/'); return false;"></div>
           <div class="card-content">
             <div class="card-title">Grupo Ayuda Bodegueros</div>
             <div class="card-link"><a href="http://grupoayudabodegueros.org/" onclick="getOutboundLink('http://grupoayudabodegueros.org/'); return false;" target="_blank">Visit their website →</a></div>
@@ -110,12 +110,6 @@
   </script>
 
   <script>
-    /**
-     * Function that registers a click on an outbound link in Analytics.
-     * This function takes a valid URL string as an argument, and uses that URL string
-     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-     * using 'navigator.sendBeacon' in browser that support it.
-     */
     var getOutboundLink = function(url) {
       gtag('event', 'click', {
         'event_category': 'outbound',
@@ -125,6 +119,13 @@
           document.location = url;
         }
       });
+    };
+  </script>
+
+  <script>
+    $button = document.getElementsByClassName('button');
+    $button.onclick = function() {
+      alert('Thanks for your vote!');
     }
   </script>
 
