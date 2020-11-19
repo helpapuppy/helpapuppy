@@ -123,11 +123,15 @@ h1 {
 }
 
 .img-2 {
-  background: transparent url('../img/default-puppy.png');
+  background: transparent url('../img/paw.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 -10px;
 }
 
 .img-3 {
-  background: transparent url('../img/default-puppy.png');
+  background: transparent url('../img/gab.png') no-repeat;
+  background-size: cover;
+  background-position: 0 -80px;
 }
 
 .card-content {
