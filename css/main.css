@@ -85,3 +85,51 @@ h1 {
   font-weight: 700;
   text-decoration: underline;
 }
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  max-width: 30%;
+}
+
+.card-content {
+  padding: 20px 20px 16px 20px;
+}
+
+.card-title {
+  width: 100%;
+  font-family: 'Patua One', cursive;
+  color: #054532;
+  font-size: 20px;
+}
+
+.votes {
+  display: none;
+}
+
+.vote-button {
+  width: 100%;
+  display: block;
+  font-family: 'Patua One', cursive;
+  color: #0F7D5D;
+  font-size: 20px;
+  background: #76FFCE;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 32px;
+}
+
+.about-us {
+  margin-top: 200px;
+}
